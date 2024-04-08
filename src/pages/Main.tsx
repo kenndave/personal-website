@@ -17,8 +17,8 @@ import { useState } from 'react'
 
 import { DownloadIcon } from '@chakra-ui/icons'
 import { FaLinkedin, FaGithub, FaJava, FaHtml5, FaPhp, FaReact, FaFigma, FaBootstrap, FaNodeJs, FaDocker} from "react-icons/fa";
-import { FaGolang } from "react-icons/fa6"
-import { SiChakraui, SiExpress, SiGmail, SiMariadb, SiMysql, SiNumpy, SiPandas, SiPostgresql, SiPrisma, SiPython, SiSqlite, SiTypescript } from "react-icons/si"
+import { FaGolang, FaUnity } from "react-icons/fa6"
+import { SiGodotengine, SiChakraui, SiExpress, SiGmail, SiMariadb, SiMysql, SiNumpy, SiPandas, SiPostgresql, SiPrisma, SiPython, SiSqlite, SiTypescript } from "react-icons/si"
 import { BiLogoCPlusPlus } from "react-icons/bi";
 import { IoLogoJavascript } from "react-icons/io5";
 import { TbBrandNextjs } from "react-icons/tb";
@@ -233,6 +233,15 @@ const Main: React.FC = () => {
                     templateColumns="repeat(6, 1fr)"
                 >
                 <VStack>
+                    <a><Icon as={FaUnity} boxSize={7}/></a>
+                    <Text>Unity</Text>
+                </VStack>
+                <VStack>
+                    <a><Icon as={SiGodotengine} boxSize={7}/></a>
+                    <Text>Godot</Text>
+                </VStack>
+                
+                <VStack>
                     <a><Icon as={SiPython} boxSize={7}/></a>
                     <Text>Python</Text>
                 </VStack>
@@ -303,57 +312,27 @@ const Main: React.FC = () => {
                 </VStack>
 
                 <VStack>
-                    <a>
-                    <Icon
-                        as={SiMysql}
-                        boxSize={7} 
-                    />
-                    </a>
+                    <a><Icon as={SiMysql} boxSize={7}/></a>
                     <Text>MySQL</Text>
                 </VStack>
                 <VStack>
-                    <a>
-                    <Icon
-                        as={SiMariadb}
-                        boxSize={7} 
-                    />
-                    </a>
+                    <a><Icon as={SiMariadb} boxSize={7}/></a>
                     <Text>MariaDB</Text>
                 </VStack>
                 <VStack>
-                    <a>
-                    <Icon
-                        as={SiPostgresql}
-                        boxSize={7} 
-                    />
-                    </a>
+                    <a><Icon as={SiPostgresql} boxSize={7}/></a>
                     <Text>PostgreSQL</Text>
                 </VStack>
                 <VStack>
-                    <a>
-                    <Icon
-                        as={SiSqlite}
-                        boxSize={7} 
-                    />
-                    </a>
+                    <a><Icon as={SiSqlite} boxSize={7}/></a>
                     <Text>SQLite</Text>
                 </VStack>
                 <VStack>
-                    <a>
-                    <Icon
-                        as={SiTypescript}
-                        boxSize={7} 
-                    />
-                    </a>
+                    <a><Icon as={SiTypescript} boxSize={7}/></a>
                     <Text>TypeScript</Text>
                 </VStack>
                 <VStack>
-                    <a>
-                    <Icon
-                        as={SiPrisma}
-                        boxSize={7} 
-                    />
-                    </a>
+                    <a><Icon as={SiPrisma} boxSize={7}/></a>
                     <Text>Prisma</Text>
                 </VStack>
                 <VStack>
