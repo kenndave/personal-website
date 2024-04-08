@@ -36,7 +36,7 @@ export default function Navbar() {
   const colorBorder = useColorModeValue('gray.200', 'gray.900')
 
   return (
-    <Box position="fixed" top={0} left={0} right={0} zIndex={999}>
+    <Box position="fixed" top={0} left={0} right={0} zIndex={999} id='main'>
       <Flex
         bg={useColorModeValue('gray.600', 'gray.400')}
         color={useColorModeValue('black', 'white')}
@@ -70,7 +70,7 @@ export default function Navbar() {
             fontFamily={'heading'}
             color={useColorModeValue('white', 'black')}
             mr='auto'>
-            Logos
+            
           </Text>
 
           <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
@@ -255,41 +255,19 @@ interface NavItem {
 
 const NAV_ITEMS: Array<NavItem> = [
   {
-    label: 'Inspiration',
-    children: [
-      {
-        label: 'Explore Design Work',
-        subLabel: 'Trending Design to inspire you',
-        href: '#',
-      },
-      {
-        label: 'New & Noteworthy',
-        subLabel: 'Up-and-coming Designers',
-        href: '#',
-      },
-    ],
+    label: 'Profile',
+    href: '#profile',
   },
   {
-    label: 'Find Work',
-    children: [
-      {
-        label: 'Job Board',
-        subLabel: 'Find your dream design job',
-        href: '#',
-      },
-      {
-        label: 'Freelance Projects',
-        subLabel: 'An exclusive list for contract work',
-        href: '#',
-      },
-    ],
+    label: 'Socials',
+    href: '#socials',
   },
   {
-    label: 'Learn Design',
-    href: '/projects',
+    label: 'Skills',
+    href: '#skills',
   },
   {
-    label: 'Hire Designers',
-    href: '/',
+    label: 'Projects',
+    href: '#projects',
   },
 ]

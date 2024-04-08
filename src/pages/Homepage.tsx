@@ -89,7 +89,8 @@ const Homepage: React.FC = () => {
           justify="center"
           alignItems="center"
           h="100vh"
-          marginRight={{ base: "5%", md: "10%", lg: "15%" }}
+          marginRight={{ base: "5%", md: "10%", lg: "7.5%" }}
+          marginLeft={{ base: "5%", md: "10%", lg: "15%" }}
           position="relative" // Add relative positioning to the parent container
         >
           {/* Border */}
