@@ -394,9 +394,11 @@ const Main: React.FC = () => {
                 >
                     {/* Project Image */}
                     <Image
-                        boxSize='300px'
+                        // boxSize='300px'
+                        boxSize={{base: isTransitioning? '300px' : '0%', md: '300px', lg: '300px'}}
                         background='rgba(56, 76, 39, 1)' 
                         src='/img/Lottereum.png'
+                        opacity={{base: isTransitioning? "100%" : "0%", md: "100%", lg: "100%"}}
                         border='4px solid'
                         transition='opacity 0.3s ease-in-out'
                         // width={{base: "100%", md: "100%", lg: "100%"}}
@@ -418,7 +420,8 @@ const Main: React.FC = () => {
                 </HStack>
                 {/* Second project */}
                 <HStack
-                    bg={cardBackground} 
+                    bg={cardBackground}
+                    height='300px' 
                     width={{base: isTransitioningProj2 ? '300px' : '100%', md: isTransitioningProj2 ? '300px' : '100%', lg: isTransitioningProj2 ? '300px' : '100%'}}
                     transition='width 0.4s ease-in-out' // Adding transition for smooth effect
                     onMouseEnter={() => handleMouseEnter(2)}
@@ -426,8 +429,9 @@ const Main: React.FC = () => {
                 >
                 {/* Project Image */}
                 <Image
-                    boxSize='300px' 
+                    boxSize={{base: isTransitioningProj2? '300px' : '0%', md: '300px', lg: '300px'}}
                     src='/img/The_Fall_of_Robots.png'
+                    opacity={{base: isTransitioningProj2? "100%" : "0%", md: "100%", lg: "100%"}}
                     bg={cardBackground}
                     border='4px solid'
                     transition='opacity 0.3s ease-in-out'
